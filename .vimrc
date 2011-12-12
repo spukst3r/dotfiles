@@ -25,5 +25,7 @@ cmap w!! w !sudo tee >/dev/null %
 
 " Settings for different file types
 autocmd FileType sh setlocal tabstop=5 shiftwidth=5 expandtab
+autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType python setlocal expandtab
 autocmd FileType nginx setlocal expandtab cindent
 
