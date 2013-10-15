@@ -24,6 +24,7 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set smarttab
+set paste
 set cryptmethod=blowfish
 
 if has('gui_running')
@@ -38,9 +39,7 @@ else
 	colorscheme solarized
 endif
 
-if &term =~ '^\(xterm\|screen\)$' && $COLORTERM == 'gnome-terminal'
-	set t_Co=256
-endif
+set t_Co=256
 
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖ;ABCDEFGHIJKLMNOPQRSTUVWXYZ:,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
@@ -52,4 +51,5 @@ autocmd FileType sh setlocal tabstop=5 shiftwidth=5 expandtab
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType python setlocal expandtab completeopt-=preview
 autocmd FileType nginx setlocal expandtab cindent
+autocmd FileType puppet setlocal tabstop=2 shiftwidth=2 expandtab
 
