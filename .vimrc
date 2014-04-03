@@ -12,19 +12,26 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'puppetlabs/puppet-syntax-vim'
+Bundle 'scrooloose/nerdtree'
 
 " vim.org plugins
 Bundle 'xml.vim'
+Bundle 'django.vim'
 
 " Jedi-vim settings
 let g:jedi#popup_on_dot = 0
+let g:jedi#completions_command = "<C-Space>"
 
 filetype plugin indent on
 
 set tabstop=4
 set shiftwidth=4
 set smarttab
-set cryptmethod=blowfish
+
+if v:version >= 703
+	set cryptmethod=blowfish
+endif
 
 if has('gui_running')
 	set guioptions-=T
