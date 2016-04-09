@@ -3,3 +3,4 @@
 !.vim/
 !.bash_aliases
 !.gitignore
+!.tmux.conf
